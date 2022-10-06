@@ -108,7 +108,7 @@ body::before {
     transform: scale(1.2);
 }
 
-.s-controller__button:nth-child(2){
+.s-controller__button:nth-child(2) {
     margin: 0 4.75rem
 }
 
@@ -143,14 +143,47 @@ body#spider-man-03--hovered::before {
     background: url('../images/pic-sm-bg-03.jpg') center / cover no-repeat;
 }
 
-body[id^="spider-man-"]::before{
+body[id^="spider-man-"]::before {
     opacity: 1;
 }
 
-body[id^="spider-man-"] .s-card:not(.s-card--hovered){
+body[id^="spider-man-"] .s-card:not(.s-card--hovered) {
     filter: grayscale(100%);
 }
 
 .s-card--hovered .s-card__title {
     bottom: 50%;
+}
+
+@media (max-width: 768px) {
+
+    .s-menu__item:nth-child(3) {
+        display: block;
+        margin: 0.25rem auto;
+    }
+
+    .s-card {
+        height: 45vh;
+    }
+
+}
+
+@media (max-width: 650px) {
+    .s-menu {
+        padding: 0.5rem 0;
+    }
+
+    .s-container {
+        flex-direction: column;
+    }
+
+    .s-card {
+        height: 20vh;
+        width: 50%;
+        margin-block: 0.25rem;
+    }
+
+    .s-card__title {
+        font-size: 1rem;
+    }
 }
