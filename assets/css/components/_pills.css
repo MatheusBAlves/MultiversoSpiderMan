@@ -1,0 +1,15 @@
+.pills ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 5px;
+}
+
+.pills ul li {
+    background: var(--primary-color);
+    color: white;
+    padding: 5px 15px;
+    margin-right: 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
